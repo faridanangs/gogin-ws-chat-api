@@ -1,0 +1,7 @@
+services:
+  api:
+    container_name: backend_api
+    image: postgres:latest
+    build: .
+    env_file:
+      - .env
